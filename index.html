@@ -7,6 +7,56 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
-  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Container-->
+    <div class="container">
+        <!--Title-->
+        <header>
+            <a href="index.html"><h1 class="title">Tic-Tac-Toe</h1></a>
+        </header>
+    
+        <nav class="landing-nav">
+            <a href="multi-player.html">
+            <div class="multi nav-box">
+                <img src="images/group.png" alt="one stick figure">
+                <h2>Multi</h2>
+            </div>
+        </a>
+        <!--Nav-->
+        <a href="single-player.html">
+            <div class="single nav-box">
+                <img src="images/user.png" alt="two stick figures">
+                <h2>Single</h2>
+            </div>
+        </a>
+        </nav>
+    </div>
+
+    <!--Audio-->
+    <div class="audio-control" loop>
+        <audio class='shanty'>
+            <source src="images/seashanty.mp3" type="audio/mpeg">
+        </audio>
+        <img src="images/speaker-filled-audio-tool.svg" onclick="playPauseAudio()" alt="">
+    </div>
+
+   
+    
+       <script src="app.js"></script>
+</section>
+</body>
+</html>
 </body>
 </html>
