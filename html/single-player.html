@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <!--Title-->
+    <div class="container">
+      <header>
+        <a href="index.html"><h1 class="title">Tic-Tac-Toe</h1></a>
+      </header>
+
+      <!--Game content+footer container-->
+
+      <!--Row flexbox container-->
+      <div class="mid-container">
+        <!--Column of buttons -->
+        <section class="buttons">
+          <!--Upper column -->
+          <div class="gameplay-buttons">
+            <button class="start" disabled>
+              <img src="../images/play.svg" alt="start button" />
+            </button>
+            <button class="reset" disabled>
+              <img src="../images/close.svg" alt="reset button" />
+            </button>
+            <button class="replay" disabled>
+              <img src="../images/refreshing.svg" alt="replay button" />
+            </button>
+          </div>
+
+          <!--Switch page nav (lower part of the column)-->
+          <div class="switch-page">
+            <a href="multi-player.html"
+              ><img src="../images/group.png" alt="Two guys"
+            /></a>
+            <a href="index.html"
+              ><img src="../images/left-chevron.svg" alt="arrow"
+            /></a>
+          </div>
+        </section>
+
+        <!--Grid of tic tac toe boxes-->
+        <div class="background-board">
+          <div class="board">
+            <!--if I remove zero width non joiners, javaScript should be fine-->
+            <h2 class="box row-1 column-1 diag-1">&zwnj;</h2>
+            <h2 class="box row-1 column-2">&zwnj;</h2>
+            <h2 class="box row-1 column-3 diag-2">&zwnj;</h2>
+
+            <h2 class="box row-2 column-1">&zwnj;</h2>
+            <h2 class="box row-2 column-2 diag-1 diag-2">&zwnj;</h2>
+            <h2 class="box row-2 column-3">&zwnj;</h2>
+
+            <h2 class="box row-3 column-1 diag-2">&zwnj;</h2>
+            <h2 class="box row-3 column-2">&zwnj;</h2>
+            <h2 class="box row-3 column-3 diag-1">&zwnj;</h2>
+          </div>
+
+          <!--Game select menu to be turned on and off-->
+          <div class="game-select">
+            <!--Multi-->
+
+            <div class="player nav-box">
+              <img src="../images/group.png" alt="one stick figure" />
+              <h2>Player vs Player</h2>
+            </div>
+
+            <!--Single-->
+
+            <div class="computer nav-box">
+              <img src="../images/user.png" alt="two stick figures" />
+              <h2>Player vs Computer</h2>
+            </div>
+          </div>
+        </div>
+
+        <!--Pop out footer-->
+
+        <footer>
+          <!--Status text area-->
+          <div class="game-status">
+            <h2>CHOOSE GAME</h2>
+          </div>
+
+          <div class="player-box">
+            <h2>Player One:</h2>
+            <input class="text" id="player-one-name" type="text" value="X" />
+          </div>
+
+          <div class="player-box">
+            <h2 class="p2-text">Player Two:</h2>
+            <input class="text" id="player-two-name" type="text" value="O" />
+          </div>
+
+          <div class="timer">0</div>
+          <h3>
+            Icons made by
+            <a href="https://www.flaticon.com/authors/google" title="Google"
+              >Google</a
+            >
+            from
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            >
+          </h3>
+
+          <h3>
+            Icons made by
+            <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            >
+          </h3>
+
+          <h3>Made by Conor McDevitt</h3>
+
+          <h3>Copyright &copy; COMAPANY 2021. All rights reserved</h3>
+          <h3>Music from OSRS soundtrack</h3>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts/index.js"></script>
+  </body>
+</html>
