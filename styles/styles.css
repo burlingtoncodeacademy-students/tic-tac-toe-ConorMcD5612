@@ -1,0 +1,359 @@
+/* getting rid of defualt styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  background-color: inherit;
+  border: none;
+}
+
+/* Font and background */
+body {
+  font-family: "Architects Daughter", cursive;
+  background-color: #ffb764;
+}
+
+/* Title */
+
+header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    rgb(255, 156, 69) 0%,
+    rgb(224, 111, 29) 50%,
+    rgb(255, 117, 67) 100%
+  );
+  padding: 2px;
+  margin-bottom: 2px;
+  border-radius: 1vw;
+  border: solid black 0.3vw;
+  font-size: 4.3vw;
+}
+
+/* hover animation for header */
+header:hover {
+  transition: ease-in-out 0.2s;
+  box-shadow: 0.1vw 0.1vw 0.5vw 0.1vw rgb(122, 36, 4);
+}
+
+/* Img nav for single/multi */
+
+.landing-nav {
+  display: flex;
+}
+
+/* make img bigger */
+.landing-nav img {
+  width: 20vw;
+}
+
+/* Individual box */
+.nav-box {
+  background: linear-gradient(
+    rgb(255, 156, 69) 0%,
+    rgb(224, 111, 29) 50%,
+    rgb(255, 117, 67) 100%
+  );
+  margin-right: 1vw;
+  border-radius: 1vw;
+  border: solid black 0.3vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4vw;
+}
+
+/* Hover animation for nav box */
+
+.nav-box:hover {
+  background: linear-gradient(
+    rgb(255, 156, 69) 0%,
+    rgb(224, 111, 29) 50%,
+    rgb(255, 117, 67) 100%
+  );
+  transition: ease-in-out 0.2s;
+  box-shadow: 2px 2px 10px 2px rgb(122, 36, 4);
+  border-radius: 1vw;
+  border: solid black 0.3vw;
+}
+
+/* nav text size */
+.landing-nav h2 {
+  font-size: 4vw;
+}
+
+/* main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Game board grid: going to have a background div that allows me to a psuedo border kind of thing, will also make it more responsive */
+
+/*grid*/
+.board {
+  display: none;
+  width: 35vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.9vw;
+  background-color: rgb(224, 99, 10);
+  border-radius: 1vw;
+}
+
+/* individual box styles */
+.box {
+  display: flex;
+  font-size: 7vw;
+  height: 9.8vw;
+  justify-content: center;
+  background-color: coral;
+  border-radius: 1vw;
+  border: solid black 0.3vw;
+  color: white;
+}
+
+/* styles for div in the back of the grid board */
+.background-board {
+  display: inline-block;
+  background: radial-gradient(
+    circle,
+    rgb(240, 198, 160) 0%,
+    rgba(204, 85, 0, 1) 50%,
+    rgba(255, 127, 80, 1) 100%
+  );
+  border-radius: 1vw;
+  border: solid black 0.3vw;
+  padding: 1.5vw;
+}
+
+/* Buttons to side (parent container for both button divs)*/
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: none;
+  border-radius: 1vw;
+  border: solid black 0.3vw;
+  border-right: none;
+  background: linear-gradient(
+    rgb(255, 156, 69) 0%,
+    rgb(224, 111, 29) 50%,
+    rgb(255, 117, 67) 100%
+  );
+  padding: 0.5vw;
+}
+
+/* img size */
+img {
+  width: 5vw;
+}
+
+/* button container (top of button container) */
+.gameplay-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* homepage and singe/multi page nav (bottom of button container)*/
+.switch-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* content container */
+.mid-container {
+  display: flex;
+}
+
+/* Button styles*/
+button:hover {
+  cursor: pointer;
+}
+
+/* disabled button styles */
+button:disabled {
+  cursor: auto;
+  opacity: 0.6;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1vw;
+  padding: 0.2vw;
+  align-items: center;
+  background: linear-gradient(
+    rgb(255, 156, 69) 0%,
+    rgb(224, 111, 29) 50%,
+    rgb(255, 117, 67) 100%
+  );
+  border-radius: 1vw;
+  border: solid black 0.3vw;
+  border-left: none;
+}
+
+/* Audio not sure how to style controls*/
+audio {
+  position: absolute;
+  width: 18vw;
+  top: 0;
+  left: 0;
+}
+
+/* javaScript interactables */
+
+/* Game status */
+.game-status {
+  color: white;
+  background-color: coral;
+  padding: 1vw;
+  border: solid black 0.3vw;
+  border-radius: 1vw;
+  font-size: 1.6vw;
+}
+
+/*form styles */
+
+.text {
+  background-color: coral;
+  color: white;
+  text-align: center;
+  width: 10vw;
+  font-size: 1vw;
+  padding: 1vw;
+  border: solid black 0.3vw;
+  border-radius: 1vw;
+}
+
+/* Timer */
+.timer {
+  font-size: 1vw;
+  padding: 1vw;
+  width: 10vw;
+  background-color: coral;
+  color: white;
+  border: solid black 0.3vw;
+  border-radius: 1vw;
+}
+
+/* choose vs */
+/*Has class of nav-box so it looks like front page nav */
+.player,
+.computer {
+  align-items: center;
+}
+
+/* Queries */
+
+/* Mobile query want to make a page layout with all the content in a column and taking up the full width and height of the page. */
+@media (max-width: 600px) {
+  /* Header size */
+  header {
+    width: 97vw;
+    height: 20vw;
+    align-items: center;
+  }
+
+  /* btn images size */
+  img {
+    width: 10vw;
+  }
+
+  /* tic tac toe boxes and styles */
+  .box {
+    font-size: 30vw;
+    align-items: center;
+    border: black solid 1vw;
+    border-radius: 2vw;
+  }
+
+  /* content container taking up full width of page */
+  .mid-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* both button flex boxes changed to row */
+  .switch-page,
+  .gameplay-buttons {
+    flex-direction: row;
+  }
+
+  /* adding left and right border back on */
+  .buttons,
+  footer {
+    border: solid black 0.3vw;
+  }
+
+  /* switching around buttons so the left chevron is the first button */
+  .buttons,
+  .switch-page {
+    flex-direction: row-reverse;
+  }
+
+  /* Adjusting sizes to make it fit page */
+  .board {
+    width: 100%;
+  }
+
+  .box {
+    height: 17vh;
+  }
+
+  footer {
+    font-size: 3.94vw;
+  }
+
+  /* Adjusting javaScript elements to fit mobile view */
+  .timer,
+  .game-status,
+  .text {
+    font-size: 5vw;
+    padding: 10px;
+    margin-top: 5px;
+    width: 90%;
+  }
+
+  /*making landing page mobile responsive (using column stretched layout)*/
+  .landing-nav{
+    
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+/*making the two buttons fill the page more */
+  .nav-box{
+    width: 85vw;
+    height: 35vh;
+    margin-top: 2vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* putting audio at the bottom and stretching it across hte page */
+  audio{
+    position: relative;
+    margin-top: 2vw;
+    width: 100%;
+  }
+}
